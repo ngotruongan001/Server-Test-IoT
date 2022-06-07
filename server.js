@@ -84,7 +84,7 @@ setInterval(() => {
                     .then(function (snapshot_in) {
                         const token = snapshot_in.val();
                         console.log(token);
-                        sendMessage(token, 'Warning', "Có cái đầu buồi vào nhà bạn");
+                        sendMessage(token, 'Warning', "Cảnh báo có cái gì đó vào nhà bạn");
                         databaseDB.ref("ESP32_Device/notification/status").set("no");
                     })
             } else {
